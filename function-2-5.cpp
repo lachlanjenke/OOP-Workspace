@@ -1,5 +1,4 @@
 #include <iostream> // Include libraries
-using namespace std; // Specifying namespace#include <iostream> // Include libraries
 using namespace std; // Specifying namespace
 
 bool is_descending(int array[], int n) {
