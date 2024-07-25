@@ -11,6 +11,5 @@ double array_mean(int array[], int n) {
 
     mean = (double)sum/(double)n; //Finding the mean
 
-
     return mean; //Return values
 }
