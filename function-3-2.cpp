@@ -1,4 +1,6 @@
 #include <iostream> // Include libraries
+#include <algorithm> 
+
 using namespace std; // Specifying namespace
 
 int median_array(int array[], int n) {
