@@ -6,6 +6,7 @@ int num_count(int array[], int n, int number) {
 
      if (n < 0) { // Return 0 if n is less than 1
         return matches;
+     }
 
     for (int i = 0; i < n; i++) { 
         if (number == array[i]) { // Check for matches
