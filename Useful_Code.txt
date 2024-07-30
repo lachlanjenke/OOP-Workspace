@@ -1,0 +1,4 @@
+Useful pieces of code 
+#include <iostream> // Include libraries
+using namespace std; // Specifying namespace
+number % 2 // Checks if number is even, 0 if even, 1 if odd
