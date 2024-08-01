@@ -1,4 +1,5 @@
 #include <iostream> // Include libraries
+#include <cmath>
 using namespace std; // Specifying namespace
 
 int binary_to_int(int binary_digits[], int number_of_digits) {
