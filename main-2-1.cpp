@@ -1,5 +1,6 @@
 #include <iostream> // Include libraries
 #include <string>
+#include <cmath>
 using namespace std; // Specifying namespace
 
 extern void print_binary_str(string decimal_number); // Specify where the function is
