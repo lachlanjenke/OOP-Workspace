@@ -1,7 +1,7 @@
 #include <iostream> // Include libraries
 using namespace std; // Specifying namespace
 
-int sum_if_palindrome(int integers[], int length) {
+int sum_if_plaindrome(int integers[], int length) {
     int sum = 0; // Initialise variables
 
     if (length <= 0) { // Return false if length is less than or equal to 0
@@ -17,7 +17,7 @@ int sum_if_palindrome(int integers[], int length) {
 }
 
 bool is_palindrome(int integers[], int length) {
-    
+
     if (length <= 0) { // Return false if length is less than or equal to 0
         return false; 
     }
@@ -34,7 +34,7 @@ bool is_palindrome(int integers[], int length) {
 
 int sum_array_elements(int integers[], int length) {
     int result = 0; // Initialise array
-    
+
     if (length <= 0) {  // Return false if length is less than or equal to 0
         return -1; 
     } 
@@ -43,7 +43,7 @@ int sum_array_elements(int integers[], int length) {
         return -2; 
     }
 
-    result = sum_array_elements(integers,length); // Call the function to sum the elements
+    result = sum_if_plaindrome(integers,length); // Call the function to sum the elements
 
     return result; // Sum the results
 
