@@ -24,9 +24,11 @@ void print_binary_str(string decimal_number) {
 
     binaryArray[counter] = 2 - base10Number; // Final conversion
 
-   for (int i = 0; i < length; i++) {
+   for (int i = 0; i < length; i++) { // Convert to string
     base10String += to_string(binaryArray[i]);
    }
 
-   cout << base10String << endl; 
+   cout << base10String << endl; // Output
+
+   delete[] binaryArray; // Free memory
 }
