@@ -10,7 +10,7 @@ int main() {
 
     double *ptr = &double_array[0]; // Create pointer
 
-    modifyArray(double_array,size,value); // Call function
+    modifyArray(ptr,size,value); // Call function
 
     for (int i = 0; i < size; i++) { // Print array to check
         cout << double_array[i] << " "; 
