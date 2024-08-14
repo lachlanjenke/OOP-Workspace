@@ -8,6 +8,10 @@ extern int *reverseArray(int *numbers1,int length);
 int main() {   
     int length = 10; // Initialise variables
 
+    if (length < 1) { // If length 0 or negative return 0
+        return 0; 
+    }
+
     int *numbers1 = readNumbers(); // Prompt user to input array
 
     int *numbers2 = reverseArray(numbers1,length); 

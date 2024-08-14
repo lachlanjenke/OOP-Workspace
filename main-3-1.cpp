@@ -7,6 +7,10 @@ bool equalsArray(int *numbers1,int *numbers2,int length);
 int main() {
     int length = 5; // Initialise variables
 
+    if (length < 1) { // If length 0 or negative return 0
+        return 0; 
+    }
+
     int *array1 = readNumbers(); // Call function to read in numbers
     int *array2 = readNumbers();
 
