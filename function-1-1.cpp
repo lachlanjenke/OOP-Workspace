@@ -9,7 +9,7 @@ int *readNumbers() {
         return nullptr; 
     }
 
-    for (int i = 0; i < 10; i++) { // Prompt user for the other values
+    for (int i = 0; i < 10; i++) { // Prompt user for the values
         cin >> numbers_arr[i]; 
     }
 
