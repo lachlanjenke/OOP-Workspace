@@ -2,7 +2,13 @@
 using namespace std; // Namespace
 
 int *readNumbers() {
-    int *numbers_arr = new int[10]; // Dynamically initialise array
+    int length = 10; // Initialise variables
+
+    if (length < 1) { // If length 0 or negative
+        return 0; 
+    }
+
+    int *numbers_arr = new int[length]; // Dynamically initialise array
 
     cout << "Input the first value: "; // Prompt user for the first value
     cin >> numbers_arr[0]; 
