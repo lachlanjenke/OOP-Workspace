@@ -36,6 +36,11 @@ bool equalsArray(int *numbers1,int *numbers2,int length) {
 }
 
 int *reverseArray(int *numbers1,int length) {
+
+    if (length < 1) { // If length 0 or negative
+        return 0; 
+    }
+    
     int *reversed_array = new int[length]; // Create new array
 
     for (int i = 0; i < length; i++) {

@@ -22,8 +22,11 @@ int *readNumbers() {
 }
 
 void printNumbers(int *numbers,int length) {
-    for (int i = 0; i < 10; i++) { // Printing values
-        cout << i << " " << numbers[i] << endl; 
+
+    if (length > 1) { // If length 0 or negative
+        for (int i = 0; i < 10; i++) { // Printing values
+            cout << i << " " << numbers[i] << endl; 
+        }
     }
 
 }

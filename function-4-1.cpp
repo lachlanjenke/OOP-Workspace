@@ -22,6 +22,10 @@ int *readNumbers() {
 }
 
 int secondSmallestSum(int *numbers,int length) {
+    if (length < 1) { // If length 0 or negative
+        return 0; 
+    }
+
     int secondSmallestSum = numbers[0]+numbers[1], smallestSum = numbers[0], sum = 0, counter = 0; // Initialise variables
 
     for (int i = 0; i < length; i++) { // Looping through each element of the array
