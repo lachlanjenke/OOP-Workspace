@@ -14,7 +14,7 @@ int main() {
 
     printNumbers(numbers_ptr,length); // Call function to print the numbers
 
-    delete numbers_ptr; // Free memory
+    delete[] numbers_ptr; // Free memory
 
     return 0; // End code
 }

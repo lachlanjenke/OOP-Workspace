@@ -17,7 +17,7 @@ int main() {
     cout << "The function will return 1 if the arrays are equal, 0 if not: " // Check if arrays are equal
     << equalsArray(array1,array2,length) << endl; 
 
-    delete [] array1, array2;  // Free memory
+    delete[] array1, array2;  // Free memory
 
     return 0; // End code
 } 
