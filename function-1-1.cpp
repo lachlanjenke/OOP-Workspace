@@ -1,18 +1,18 @@
 #include <iostream> // Libraries
 using namespace std; // Namespace
 
-int *readNumbers(int length) {
+int *readNumbers() {
 
-    int *numbers_arr = new int[length]; // Dynamically initialise array
+    int *numbers_arr = new int[10]; // Dynamically initialise array
 
-    if (numbers_arr == nullptr || length < 1) {
+    if (numbers_arr == nullptr) { // If memory allocation failed
         return nullptr; 
     }
 
     cout << "Input the first value: "; // Prompt user for the first value
     cin >> numbers_arr[0]; 
 
-    for (int i = 1; i < length; i++) { // Prompt user for the other values
+    for (int i = 1; i < 10; i++) { // Prompt user for the other values
         cout << "Input the next value: "; 
         cin >> numbers_arr[i]; 
     }
