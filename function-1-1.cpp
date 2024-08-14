@@ -5,7 +5,7 @@ int *readNumbers() {
     int length = 10; // Initialise variables
 
     if (length < 1) { // If length 0 or negative
-        return 0; 
+        return nullptr; 
     }
 
     int *numbers_arr = new int[length]; // Dynamically initialise array
