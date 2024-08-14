@@ -10,7 +10,7 @@ int *readNumbers() {
     
     int *numbers_arr = new int[length]; // Dynamically initialise array
 
-    for (int i = 1; i < length; i++) { // Prompt user for the values
+    for (int i = 0; i < length; i++) { // Prompt user for the values
         cin >> numbers_arr[i]; 
     }
 
