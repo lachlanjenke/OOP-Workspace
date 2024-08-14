@@ -10,5 +10,7 @@ extern void hexDigits(int *numbers,int length);
 
     hexDigits(numbers,length); // Call hex function. 
 
+    delete [] numbers; // Free memory
+
     return 0; // End code
  }

@@ -11,5 +11,7 @@ int main() {
 
     cout << "The second smallest sum is: " << secondSmallestSum(numbers,length) << endl; // Call function
 
-    return 0; 
+    delete [] numbers; // Free memory
+
+    return 0; // End code
 }

@@ -24,5 +24,7 @@ int main() {
 
     cout << "0 if reversed, 1 if not: " << equalsArray(numbers1,numbers2,length) << endl; // Call function to check
 
+    delete [] numbers1, numbers2;  // Free memory
+
     return 0; // End code
 }
