@@ -9,11 +9,7 @@ int *readNumbers() {
         return nullptr; 
     }
 
-    cout << "Input the first value: "; // Prompt user for the first value
-    cin >> numbers_arr[0]; 
-
-    for (int i = 1; i < 10; i++) { // Prompt user for the other values
-        cout << "Input the next value: "; 
+    for (int i = 0; i < 10; i++) { // Prompt user for the other values
         cin >> numbers_arr[i]; 
     }
 
