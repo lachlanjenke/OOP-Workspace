@@ -2,7 +2,7 @@
 #include <string.h> 
 #include "Person.h" // Include .h file
 
-using namespace std; // Namepsace
+using namespace std; // Namespace
 
 PersonList createPersonList(int n) {
      PersonList peopleList; // Create list
@@ -12,7 +12,7 @@ PersonList createPersonList(int n) {
      peopleList.numPeople = n; // Set size
 
     for (int i = 0; i < n; i++) { // Filling array
-        array[i].name = "John Doe"; 
+        array[i].name = "Jane Doe"; 
         array[i].age = 0; 
     }
 
@@ -21,7 +21,9 @@ PersonList createPersonList(int n) {
 
 PersonList shallowCopyPersonList(PersonList pl) {
     PersonList shallowCopy; // Create copy list
+    
     shallowCopy.people = pl.people; // Set pointer
+    shallowCopy.numPeople = pl.numPeople;
 
     return shallowCopy; 
 }

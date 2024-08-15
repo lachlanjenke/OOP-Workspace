@@ -12,6 +12,7 @@ struct Person {
 struct PersonList {
     Person* people;
     int numPeople;
+
 };
 
 #endif
