@@ -27,7 +27,6 @@ int main() {
         cout << shallowCopy.people[i].name << " " << shallowCopy.people[i].age << endl; // Checking if copied right
     }
 
-
     return 0; // End code
 
 }
