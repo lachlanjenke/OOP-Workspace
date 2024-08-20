@@ -8,7 +8,7 @@ int main() {
     cout << "Default instrument: " << m1.get_instrument() << ", Default experience: " << m1.get_experience() << endl;
 
     Musician m2("guitar", 5);
-    cout << "Instrument: " << m2.get_instrument() << ", Experience: " << m2.get_experience() << std::endl;
+    cout << "Instrument: " << m2.get_instrument() << ", Experience: " << m2.get_experience() << endl;
 
     return 0;
 }
