@@ -29,7 +29,9 @@ class Orchestra {
         // otherwise returns false
         bool add_musician(Musician new_musician);
 
-        ~Orchestra();
+    ~Orchestra() {
+        delete[] musicianList;
+    }
 
 };
 
