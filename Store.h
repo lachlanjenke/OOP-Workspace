@@ -3,14 +3,14 @@
 
 #include <string.h>
 #include <iostream>
-#include <StockItem.h>
+#include "StockItem.h"
 
 using namespace std;
 
 class Store {
     private:
-        int capacity,current_capacity;
-        string item_list; 
+        int store_capacity,current_capacity;
+        StockItem *item_list; 
 
     public:
         Store(); // default constructor
