@@ -58,6 +58,10 @@ int main() {
    cout << "The total number of Tv's is " << tech_store.get_Stock_Count(2025) << endl; 
 
    // View item list
-   tech_store.get_Stock_List();
+   StockItem *list = tech_store.get_Stock_List(); 
+   for (int i = 0; i < tech_store.get_Total_Stock_Count(); i++) {
+    cout << "The product " << list[i].get_description() << " has item code " << list[i].get_item_code() << endl; 
+   }
 
+   return 0;
 }
