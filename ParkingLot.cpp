@@ -39,7 +39,7 @@ void ParkingLot::parkVehicle(Vehicle *vehicle) {
 // Function to unpark vehicle
 void ParkingLot::unparkVehicle(int ID) {
     bool wasInLot = false; 
-    for (int i = 0; i < parkingLotMax; i++) {
+    for (int i = 0; i < vehicleCount; i++) {
         if (ID == vehicles[i]->getID()) {
             vehicles[i] = nullptr; 
             vehicleCount--; 
