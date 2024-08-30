@@ -44,7 +44,6 @@ void ParkingLot::unparkVehicle(int ID) {
             vehicles[i] = nullptr; 
             vehicleCount--; 
             wasInLot = true;
-            break; 
         }
     }
 
