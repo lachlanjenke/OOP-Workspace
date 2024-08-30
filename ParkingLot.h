@@ -15,5 +15,6 @@ class ParkingLot {
         int getCount(); // Function to return current number of vehicles
         void parkVehicle(Vehicle *vehicle); // Function to park vehicle 
         void unparkVehicle(int ID); // Function to unpark vehicle 
+        int countOverstayingVehicles(int maxParkingDuration); // Function to count over staying vehicles
 }; 
 #endif
