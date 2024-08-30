@@ -42,12 +42,10 @@ void ParkingLot::unparkVehicle(int ID) {
     for (int i = 0; i < parkingLotMax; i++) {
         if (ID == vehicles[i]->getID() && vehicles[i] != nullptr) {
             vehicles[i] = nullptr; 
+            vehicleCount--; 
             wasInLot = true;
+            break; 
         }
-    }
-
-    if (wasInLot == true) {
-        vehicleCount--;
     }
 
     if (wasInLot == false) {
