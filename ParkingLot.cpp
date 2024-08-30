@@ -40,11 +40,13 @@ void ParkingLot::parkVehicle(Vehicle *vehicle) {
 void ParkingLot::unparkVehicle(int ID) {
     bool wasInLot = false; 
     for (int i = 0; i < parkingLotMax; i++) {
-        if (ID == vehicles[i]->getID() && vehicles[i] != nullptr) {
-            vehicles[i] = nullptr; 
-            vehicleCount--; 
-            wasInLot = true;
-            break; 
+        if (vehicles[i] != nullptr) {
+            if (ID == vehicles[i]->getID()) {
+                vehicles[i] = nullptr; 
+                vehicleCount--; 
+                wasInLot = true;
+                break; 
+            }
         }
     }
 
