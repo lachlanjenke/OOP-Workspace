@@ -40,7 +40,7 @@ void ParkingLot::parkVehicle(Vehicle *vehicle) {
 void ParkingLot::unparkVehicle(int ID) {
     bool wasInLot = false; 
     for (int i = 0; i < vehicleCount; i++) {
-        if (ID == vehicles[i]->getID()) {
+        if (ID == vehicles[i]->getID() && vehicles[i] != nullptr) {
             vehicles[i] = nullptr; 
             wasInLot = true;
         }
