@@ -9,9 +9,8 @@ Fridge::Fridge() {
     Appliance(); 
     volume = 0; 
 }
-Fridge::Fridge(int powerRating, bool isOn, double volume) {
+Fridge::Fridge(int powerRating, double volume) {
     set_powerRating(powerRating);
-    set_isOn(isOn);
     this->volume = volume; 
     
 }
