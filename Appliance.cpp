@@ -8,6 +8,9 @@ Appliance::Appliance() {
     isOn = false; 
 }
 
+Appliance::Appliance(int powerRating) {
+    this->powerRating = powerRating; 
+}
 Appliance::Appliance(int powerRating, bool isOn) {
     this->powerRating = powerRating; 
     this->isOn = isOn; 

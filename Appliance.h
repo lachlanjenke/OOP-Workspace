@@ -9,6 +9,7 @@ class Appliance {
         bool isOn; 
     public: 
         Appliance();// Defeault constructor 
+        Appliance(int powerRating); 
         Appliance(int powerRating, bool isOn); // Function for creating Appliance class
         void turnOn(); // Function to turn on appliance
         void turnOff(); // Function to turn off appliance
