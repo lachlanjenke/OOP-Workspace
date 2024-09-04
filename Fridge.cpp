@@ -5,6 +5,10 @@
 
 using namespace std; 
 
+Fridge::Fridge() {
+    Appliance(); 
+    volume = 0; 
+}
 Fridge::Fridge(int powerRating, bool isOn, double volume) {
     set_powerRating(powerRating);
     set_isOn(isOn);
