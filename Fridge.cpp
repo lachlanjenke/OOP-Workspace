@@ -6,13 +6,20 @@
 using namespace std; 
 
 Fridge::Fridge() {
-    Appliance(); 
+    set_powerRating(0);
+    set_isOn(false); 
     volume = 0; 
 }
 Fridge::Fridge(int powerRating, double volume) {
     set_powerRating(powerRating);
     this->volume = volume; 
     
+}
+
+Fridge::Fridge(int powerRating, bool isOn, double volume) {
+    set_powerRating(powerRating);
+    set_isOn(isOn);
+    this->volume = volume; 
 }
 
 void Fridge::setVolume(double volume) {
