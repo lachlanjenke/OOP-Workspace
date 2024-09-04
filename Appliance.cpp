@@ -20,6 +20,10 @@ void Appliance::set_powerRating(int powerRating) {
     this->powerRating = powerRating; 
 }
 
+void Appliance::set_isOn(bool isOn) {
+    this->isOn = isOn; 
+}
+
 int Appliance::get_powerRating() {
     return this->powerRating; 
 }
