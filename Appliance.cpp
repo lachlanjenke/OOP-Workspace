@@ -3,6 +3,11 @@
 
 using namespace std; 
 
+Appliance::Appliance() {
+    powerRating = 0;
+    isOn = false; 
+}
+
 Appliance::Appliance(int powerRating, bool isOn) {
     this->powerRating = powerRating; 
     this->isOn = isOn; 
