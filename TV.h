@@ -8,10 +8,12 @@ class TV : public Appliance {
         double screenSize;
     public: 
         TV(int powerRating, bool isOn, double screenSize); // Constructor for TV
+        TV(int powerRating, double screenSize); 
         TV():TV(0,false,0){} // Defeault constructor
         void setScreenSize(double screenSize); // Function to set screen size
         double getScreenSize(); // Function to return screen size
         double getPowerConsumption(); // Function to return power consumption
+        ~TV() {}
 
 }; 
 
