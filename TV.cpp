@@ -5,16 +5,16 @@
 
 using namespace std; 
 
+// Defeault constructor
+TV::TV() {
+    set_powerRating(0); 
+    set_isOn(0); 
+    screenSize = 0; 
+}
 // Constructor for TV
 TV::TV(int powerRating, double screenSize) {
     set_powerRating(powerRating);
     this->screenSize = screenSize; 
-}
-
-TV::TV(int powerRating, bool isOn, double screenSize) {
-    set_powerRating(powerRating); 
-    set_isOn(isOn); 
-    this->screenSize = screenSize;
 }
 
 // Function to set screen size

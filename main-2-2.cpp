@@ -16,7 +16,8 @@ string printIsOn(Appliance appliance) {
 }
 
 int main() {
-    TV smartTV(5,true,50);
+    TV smartTV(5,50);
+    smartTV.turnOff();
 
     cout << "The TV with power rating " << smartTV.Appliance::get_powerRating() << " is currently " << printIsOn(smartTV) <<
     " and has a power consumption of " << smartTV.getPowerConsumption() << endl; 
