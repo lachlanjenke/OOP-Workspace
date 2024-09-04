@@ -11,10 +11,6 @@ Appliance::Appliance() {
 Appliance::Appliance(int powerRating) {
     this->powerRating = powerRating; 
 }
-Appliance::Appliance(int powerRating, bool isOn) {
-    this->powerRating = powerRating; 
-    this->isOn = isOn; 
-}
 
 void Appliance::turnOn() {
     isOn = true; 
