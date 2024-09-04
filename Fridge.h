@@ -13,6 +13,7 @@ class Fridge : public Appliance {
         void setVolume(double volume); // Function to set volume
         double getVolume(); // Function to get volume
         double getPowerConsumption(); // Function to get power consumption 
+        ~Fridge() {} 
 };
 
 #endif
