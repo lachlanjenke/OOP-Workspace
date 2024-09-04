@@ -16,7 +16,7 @@ House::House() {
 House::House(int numAppliances) {
     currentNumAppliances = 0; 
     this->numAppliances = numAppliances; 
-    appliances = new Appliance*[this->numAppliances]{nullptr};
+    appliances = new Appliance*[this->numAppliances];
     for (int i = 0; i < numAppliances; i++) {
         appliances[i] = nullptr;
     }

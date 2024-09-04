@@ -9,26 +9,21 @@ using namespace std;
 
 int main() {
     House Home(3); 
-    TV livingRoomTV(4,true,50); 
-    Fridge kitchenFridge(5,true,100);
-    TV officeTV(3,true,30); 
-    
-    TV *livingRoomTV_ptr = &livingRoomTV; 
-    Fridge *kitchenFridge_ptr = &kitchenFridge; 
-    TV *officeTV_ptr = &officeTV;
+    TV *livingRoomTV = new TV(4,50); 
+    Fridge *kitchenFridge = new Fridge(5,100);
+    TV *officeTV = new TV(3,30); 
 
-
-     if (Home.addAppliance(livingRoomTV_ptr)) {
+     if (Home.addAppliance(livingRoomTV)) {
         cout << "Appliance 1 was added." << endl;
     } else {
         cout << "Appliance 1 was not added" << endl; 
     }
-    if (Home.addAppliance(kitchenFridge_ptr)) {
+    if (Home.addAppliance(kitchenFridge)) {
         cout << "Appliance 2 was added." << endl;
     } else {
         cout << "Appliance 2 was not added" << endl; 
     }
-    if (Home.addAppliance(officeTV_ptr)) {
+    if (Home.addAppliance(officeTV)) {
         cout << "Appliance 3 was added." << endl;
     } else {
         cout << "Appliance 3 was not added" << endl; 
