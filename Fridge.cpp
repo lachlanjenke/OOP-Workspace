@@ -16,12 +16,6 @@ Fridge::Fridge(int powerRating, double volume) {
     
 }
 
-Fridge::Fridge(int powerRating, bool isOn, double volume) {
-    set_powerRating(powerRating);
-    set_isOn(isOn);
-    this->volume = volume; 
-}
-
 void Fridge::setVolume(double volume) {
     this->volume = volume; 
 }
