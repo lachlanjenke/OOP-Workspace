@@ -14,7 +14,8 @@ string printIsOn(Appliance appliance) {
 }
 
 int main() {
-    Appliance fridge(4,false);
+    Appliance fridge(4);
+    fridge.turnOff(); 
 
     cout << "The fridge with power rating " << fridge.get_powerRating() << 
     " is currently " << printIsOn(fridge) << endl; 
