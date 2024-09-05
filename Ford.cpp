@@ -1,51 +1,60 @@
 #include <iostream> 
 #include "Car.h"
-#include "Ford.h" 
+#include "Tesla.h"
 
-Ford::Ford() {
-    set_price(0);
+using namespace std; 
+
+// Constructor
+Tesla::Tesla() {
+    set_price(0); 
     set_emissions(0);
-    set_badgeNumber(0);
-    set_litresOfFuel(60);
+    model = '\n'; 
+    batteryPercentage = 100; 
+
 }
 
-Ford::Ford(int badgeNumber, int price) {
+// Constructor with parameters
+Tesla::Tesla(char model, int price) {
     set_price(price); 
     set_emissions(0);
-    set_badgeNumber(badgeNumber);
-    set_litresOfFuel(60);
-}
-void Ford::set_badgeNumber(int badgeNumber) {
-    this->badgeNumber = badgeNumber; 
+    set_model(model); 
+    set_batteryPercentage(100);
+} 
+
+// Set model
+void Tesla::set_model(char model) {
+    this->model = model;
 }
 
-void Ford::set_litresOfFuel(float litresOfFuel) {
-    this->litresOfFuel = litresOfFuel; 
+// Set battery
+void Tesla::set_batteryPercentage(float batteryPercentage) {
+    this->batteryPercentage = batteryPercentage; 
 }
-    
-void Ford::refuel(int litres) {
-    if (litresOfFuel < 60) {
-        litresOfFuel += litres; 
-        if (litresOfFuel > 60) {
-            litresOfFuel = 60; 
+
+// Charge battery
+void Tesla::chargeBattery(int mins) {
+    float tempMins = mins;
+    if (batteryPercentage != 100) {
+        batteryPercentage += 0.5 * tempMins; 
+        if (batteryPercentage > 100) {
+            batteryPercentage = 100; 
         }
-    } else {
-        litresOfFuel = 60;
     }
 }
 
-void Ford::drive(int kms) {
+// Drive
+void Tesla::drive(int kms) {
     float tempEmissions = 0; 
     float tempKms = kms; 
-    if (litresOfFuel > 0) {
-        litresOfFuel -= tempKms/5; 
-        tempEmissions = get_emissions(); 
-        tempEmissions += 234 * kms; 
+    if (batteryPercentage > 0) {
+        batteryPercentage -= tempKms/5;
+        tempEmissions = get_emissions();
+        tempEmissions += 74 * kms; 
         set_emissions(tempEmissions);
-        if (litresOfFuel < 0) {
-            litresOfFuel = 0;
+        if (batteryPercentage < 0) {
+            batteryPercentage = 0; 
         }
     } else {
-        litresOfFuel = 0; 
+        batteryPercentage = 0; 
     }
 }
