@@ -15,6 +15,4 @@ int main() {
 
    Fleet fleet1(Tesla1,Ford1,Car1,Ford2,Tesla2); 
 
-   Car **fleet2 = fleet1.get_fleet(); 
-
 }
