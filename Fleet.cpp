@@ -13,11 +13,11 @@ Fleet::Fleet() {
 
 Fleet::Fleet(Tesla *Tesla1, Ford *Ford1, Car *Car1, Ford *Ford2, Tesla *Tesla2) {
     fleet = new Car*[5]; 
-    fleet[1] = Tesla1;
-    fleet[2] = Ford1; 
-    fleet[3] = Car1;
-    fleet[4] = Ford2;
-    fleet[5] = Tesla2; 
+    fleet[0] = Tesla1;
+    fleet[1] = Ford1; 
+    fleet[2] = Car1;
+    fleet[3] = Ford2;
+    fleet[4] = Tesla2; 
 }
 
 Car **Fleet::get_fleet() {
