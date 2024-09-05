@@ -10,9 +10,9 @@ int main() {
     // Testing ford functions
     cout << "The Ford with badge number " << fordCar.get_badgeNumber() << " costs " << fordCar.get_price() << endl; 
 
-    fordCar.drive(100); 
+    fordCar.drive(151); 
 
-    cout << "After driving 100 km the ford car has emissions " << fordCar.get_emissions() 
+    cout << "After driving 151 km the ford car has emissions " << fordCar.get_emissions() 
     << " and fuel " << fordCar.get_litresOfFuel() << " L" << endl;
 
     fordCar.refuel(10);

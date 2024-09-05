@@ -33,8 +33,9 @@ void Tesla::set_batteryPercentage(float batteryPercentage) {
 
 // Charge battery
 void Tesla::chargeBattery(int mins) {
+    float tempMins = mins;
     if (batteryPercentage != 100) {
-        batteryPercentage += 0.5 * mins; 
+        batteryPercentage += 0.5 * tempMins; 
         if (batteryPercentage > 100) {
             batteryPercentage = 100; 
         }
@@ -44,8 +45,9 @@ void Tesla::chargeBattery(int mins) {
 // Drive
 void Tesla::drive(int kms) {
     int tempEmissions = 0; 
+    float tempKms = kms; 
     if (batteryPercentage > 0) {
-        batteryPercentage -= kms/5;
+        batteryPercentage -= tempKms/5;
         tempEmissions = get_emissions();
         tempEmissions += 74 * kms; 
         set_emissions(tempEmissions);
