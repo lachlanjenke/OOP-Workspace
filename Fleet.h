@@ -12,7 +12,7 @@ class Fleet : public Car {
         Fleet(); 
         Fleet(Tesla *Tesla1, Ford *Ford1, Car *Car1, Ford *Ford2, Tesla *Tesla2);
         Car **get_fleet();
-        ~Fleet() {delete fleet;} 
+        ~Fleet() {} 
 };
 
 #endif
