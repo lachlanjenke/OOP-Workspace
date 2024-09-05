@@ -5,8 +5,9 @@
 using namespace std; 
 
 int main() {
-    Tesla Ymodel('Y',100000); 
+    Tesla Ymodel('Y',100000); // Create Tesla
 
+    // Test Tesla functions
     cout << "The Tesla model " << Ymodel.get_model() << " costs " << Ymodel.get_price() << endl; 
 
     Ymodel.drive(100); 
