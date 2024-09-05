@@ -7,7 +7,7 @@ class Car {
     public:
         Car(); // Constructor
         Car(int price); // Function to make car
-        void drive(int kms); // Drive function
+        virtual void drive(int kms); // Drive function
         void set_price(int price); // Set price
         void set_emissions(int emissions); // Set emissions
         int get_price(); // Get price
