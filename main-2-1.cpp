@@ -1,0 +1,22 @@
+#include <iostream> 
+#include "Car.h"
+#include "Tesla.h"
+
+using namespace std; 
+
+int main() {
+    Tesla Ymodel('Y',100000); 
+
+    cout << "The Tesla model " << Ymodel.get_model() << " costs " << Ymodel.get_price() << endl; 
+
+    Ymodel.drive(100); 
+
+    cout << "After driving 100 km the tesla has emissions " << Ymodel.get_emissions() 
+    << " and charge " << Ymodel.get_batteryPercentage() << "%" << endl;
+
+    Ymodel.chargeBattery(20); 
+
+    cout << "Charging the tesla for 20 minutes increases the charge to " << Ymodel.get_batteryPercentage() << "%" << endl; 
+
+    return 0;
+}
