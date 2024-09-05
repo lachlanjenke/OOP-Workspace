@@ -10,9 +10,9 @@ int main() {
     // Test Tesla functions
     cout << "The Tesla model " << Ymodel.get_model() << " costs " << Ymodel.get_price() << endl; 
 
-    Ymodel.drive(151); 
+    Ymodel.drive(1000); 
 
-    cout << "After driving 151 km the tesla has emissions " << Ymodel.get_emissions() 
+    cout << "After driving 1000 km the tesla has emissions " << Ymodel.get_emissions() 
     << " and charge " << Ymodel.get_batteryPercentage() << "%" << endl;
 
     Ymodel.chargeBattery(20); 

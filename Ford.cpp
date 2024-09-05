@@ -35,7 +35,7 @@ void Ford::refuel(int litres) {
 }
 
 void Ford::drive(int kms) {
-    int tempEmissions = 0; 
+    float tempEmissions = 0; 
     float tempKms = kms; 
     if (litresOfFuel > 0) {
         litresOfFuel -= tempKms/5; 
