@@ -1,65 +1,51 @@
 #include <iostream> 
 #include "Car.h"
-#include "Tesla.h"
+#include "Ford.h" 
 
-using namespace std; 
-
-// Constructor
-Tesla::Tesla() {
-    set_price(0); 
+Ford::Ford() {
+    set_price(0);
     set_emissions(0);
-    model = '\n'; 
-    batteryPercentage = 100; 
-
+    set_badgeNumber(0);
+    set_litresOfFuel(60);
 }
 
-// Constructor with parameters
-Tesla::Tesla(char model, int price) {
+Ford::Ford(int badgeNumber, int price) {
     set_price(price); 
     set_emissions(0);
-    set_model(model); 
-    set_batteryPercentage(100);
-} 
-
-// Set model
-void Tesla::set_model(char model) {
-    this->model = model;
+    set_badgeNumber(badgeNumber);
+    set_litresOfFuel(60);
+}
+void Ford::set_badgeNumber(int badgeNumber) {
+    this->badgeNumber = badgeNumber; 
 }
 
-// Set battery
-void Tesla::set_batteryPercentage(float batteryPercentage) {
-    this->batteryPercentage = batteryPercentage; 
+void Ford::set_litresOfFuel(float litresOfFuel) {
+    this->litresOfFuel = litresOfFuel; 
 }
-
-// Charge battery
-void Tesla::chargeBattery(int mins) {
-    float tempMins = mins;
-    if (batteryPercentage != 100) {
-        batteryPercentage += 0.5 * tempMins; 
-        if (batteryPercentage > 100) {
-            batteryPercentage = 100; 
+    
+void Ford::refuel(int litres) {
+    if (litresOfFuel < 60) {
+        litresOfFuel += litres; 
+        if (litresOfFuel > 60) {
+            litresOfFuel = 60; 
         }
+    } else {
+        litresOfFuel = 60;
     }
 }
 
-// Drive
-void Tesla::drive(int kms) {
+void Ford::drive(int kms) {
     float tempEmissions = 0; 
-    int counter; 
-    if (batteryPercentage > 0) {
-        while (batteryPercentage - 1/5 > 0)
-            if (counter = kms) {
-                break; 
-            } else {
-                tempEmissions = get_emissions(); 
-                tempEmissions += 74;
-                set_emissions(tempEmissions); 
-            }
-       
-        if (batteryPercentage < 0) {
-            batteryPercentage = 0; 
+    float tempKms = kms; 
+    if (litresOfFuel > 0) {
+        litresOfFuel -= tempKms/5; 
+        tempEmissions = get_emissions(); 
+        tempEmissions += 234 * kms; 
+        set_emissions(tempEmissions);
+        if (litresOfFuel < 0) {
+            litresOfFuel = 0;
         }
     } else {
-        batteryPercentage = 0; 
+        litresOfFuel = 0; 
     }
 }

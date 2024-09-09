@@ -57,4 +57,6 @@ void Tesla::drive(int kms) {
     } else {
         batteryPercentage = 0; 
     }
+
+    if (kms = 100; )
 }
