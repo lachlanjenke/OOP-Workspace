@@ -48,6 +48,13 @@
         "map": "cpp",
         "optional": "cpp",
         "unordered_map": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "deque": "cpp",
+        "memory": "cpp",
+        "fstream": "cpp",
+        "iomanip": "cpp",
+        "print": "cpp",
+        "queue": "cpp",
+        "stack": "cpp"
     }
 }
