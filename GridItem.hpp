@@ -4,7 +4,6 @@
 #include <tuple>
 
 using namespace std;
-int GridItem::gridItemCount = 0;
 
 class GridItem {
     private:
@@ -53,5 +52,7 @@ class GridItem {
 
 
 };
+
+int GridItem::gridItemCount = 0;
 
 #endif
