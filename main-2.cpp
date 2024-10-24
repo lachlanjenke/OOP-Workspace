@@ -9,7 +9,9 @@
 
 using namespace std;
 
+int Interactable::interactableCount = 0;
+
 int main() {
 
-    
+
 }

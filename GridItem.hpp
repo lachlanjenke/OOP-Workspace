@@ -9,9 +9,9 @@ class GridItem {
     private:
         pair<int,int> coordinates;
         int width, height;
-        static int gridItemCount;
-    public:
         
+    public:
+        static int gridItemCount;
         GridItem(int x, int y, int width, int height) {
             get<0>(coordinates) = x;
             get<1>(coordinates) = y;
@@ -43,10 +43,6 @@ class GridItem {
 
         int getActiveGridItemCount() {
             return gridItemCount; 
-        }
-
-        static void increaseGridCount() {
-            
         }
 
         virtual ~GridItem() {

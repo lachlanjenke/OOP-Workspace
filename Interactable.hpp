@@ -11,13 +11,16 @@ enum InteractableType {
 
 class Interactable : public GridItem {
     private: 
-        static int interactableCount;
+        
     public: 
+        static int interactableCount;
         Interactable(int x, int y, int width, int height) : GridItem(x,y,width,height) {
             interactableCount++;
         }
 
-        Interactable() : GridItem(0,0,0,0) {}
+        Interactable() : GridItem(0,0,0,0) {
+            interactableCount++;
+        }
 
         virtual bool interact(Robot *player) = 0;
 

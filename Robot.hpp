@@ -40,6 +40,10 @@ class Robot : GridItem {
                 }
             }
         }
+
+        pair<int, int> getCoordinates() {
+            return getCoordinates();
+        }
 };
 
 #endif
