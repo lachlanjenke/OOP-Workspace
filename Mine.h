@@ -13,7 +13,7 @@ class Mine : public GameEntity {
         }
 
     Explosion explode() {
-        tuple<int,int>(position) = getPos();
+        tuple<int,int> position = getPos();
         Explosion mine(get<0>(position),get<1>(position));
         return mine;
     }

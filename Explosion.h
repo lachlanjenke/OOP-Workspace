@@ -5,7 +5,7 @@
 #include "Effect.h"
 #include <tuple>
 
-class Explosion : public GameEntity, Effect {
+class Explosion : public GameEntity, public Effect {
     public:
         Explosion(int x, int y) {
             tuple<int,int>position(x,y);

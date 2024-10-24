@@ -11,7 +11,14 @@ class Ship : public GameEntity {
         }
 
         void move(int dx, int dy) {
-            setPos(dx,dy);
+            tuple<int,int>(position) = getPos();
+            int xShip = get<0>(position);
+            int yShip = get<1>(position);
+            
+            xShip += dx;
+            yShip += dy;
+
+            setPos(xShip,yShip);
         }
 };
 

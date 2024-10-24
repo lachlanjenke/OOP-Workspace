@@ -4,6 +4,7 @@
 #include <tuple>
 
 using namespace std;
+class Explosion;
 
 enum GameEntityType {
     ExplosionType,
@@ -23,16 +24,16 @@ class GameEntity {
 
             switch (type) {
                 case 'E':
-                    type = ExplosionType;
+                    this->type = ExplosionType;
                     break;
                 case 'M':
-                    type = MineType;
+                    this->type = MineType;
                     break;
                 case 'S':
-                    type = ShipType;
+                    this->type = ShipType;
                     break;
                 default:
-                    type = NoneType;
+                    this->type = NoneType;
                     break;
             }
         }
@@ -55,13 +56,13 @@ class GameEntity {
         void setType(char type) {
             switch (type) {
                 case 'E':
-                    type = ExplosionType;
+                    this->type = ExplosionType;
                     break;
                 case 'M':
-                    type = MineType;
+                    this->type = MineType;
                     break;
                 case 'S':
-                    type = ShipType;
+                    this->type = ShipType;
                     break;
                 default:
                     type = NoneType;
