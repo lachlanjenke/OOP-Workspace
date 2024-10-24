@@ -21,7 +21,6 @@ class GridItem {
         }
 
         GridItem() : GridItem(0,0,0,0) {
-            gridItemCount++;
         }
 
         void setCoordinates(int x, int y) {

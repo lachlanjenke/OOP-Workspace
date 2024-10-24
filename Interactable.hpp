@@ -19,7 +19,6 @@ class Interactable : public GridItem {
         }
 
         Interactable() : GridItem(0,0,0,0) {
-            interactableCount++;
         }
 
         virtual bool interact(Robot *player) = 0;
