@@ -17,6 +17,8 @@ class Goal : public Interactable {
             } else {
                 return false; 
             }
+
+            return false;
         }
 
         InteractableType getType() {

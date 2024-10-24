@@ -39,6 +39,7 @@ class Robot : GridItem {
                     return false; 
                 }
             }
+            return false; 
         }
 
         pair<int, int> getCoordinates() {

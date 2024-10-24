@@ -20,6 +20,8 @@ class Obstacle : public Interactable {
             } else {
                 return false;
             }
+
+            return false;
          }
 
         InteractableType getType() {
