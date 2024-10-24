@@ -46,6 +46,28 @@ class GameEntity {
         GameEntityType getType() {
             return type;
         }
+
+        void setPos(int x, int y) {
+            get<0>(position) = x;
+            get<1>(position) = y;
+        }
+
+        void setType(char type) {
+            switch (type) {
+                case 'E':
+                    type = ExplosionType;
+                    break;
+                case 'M':
+                    type = MineType;
+                    break;
+                case 'S':
+                    type = ShipType;
+                    break;
+                default:
+                    type = NoneType;
+                    break;
+            }
+        }
 };
 
 #endif
