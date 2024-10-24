@@ -24,6 +24,10 @@ class Goal : public Interactable {
         InteractableType getType() {
             return GOAL;
         }
+
+        ~Goal() {
+            interactableCount--;
+        }
 };
 
 #endif

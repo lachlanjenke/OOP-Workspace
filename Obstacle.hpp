@@ -27,6 +27,10 @@ class Obstacle : public Interactable {
         InteractableType getType() {
             return OBSTACLE;
         }
+
+        ~Obstacle() {
+            interactableCount--;
+        }
 };
 
 #endif
