@@ -16,7 +16,29 @@ class Robot : GridItem {
         }
 
         void takeHit() {
-            
+            if (health != 0) {
+                health--;
+            }
+        }
+
+        bool move(int xOffSet, int yOffSet) {
+            if (xOffSet && yOffSet != 0) {
+                return false;
+            } else {
+                pair<int, int>(currentCords) = getCoordinates();
+                int x = get<0>(currentCords);
+                int y = get<1>(currentCords);
+
+                if (x + xOffSet < getGridWidth() - 1 && y + yOffSet < getGridHeight()) {
+                    x += xOffSet;
+                    y += yOffSet;
+
+                    setCoordinates(x,y);
+                    return true;
+                } else {
+                    return false; 
+                }
+            }
         }
 };
 

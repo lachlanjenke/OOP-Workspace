@@ -11,12 +11,13 @@ class GridItem {
         int width, height;
         static int gridItemCount;
     public:
+        
         GridItem(int x, int y, int width, int height) {
             get<0>(coordinates) = x;
             get<1>(coordinates) = y;
             this->width = width;
             this->height = height;
-
+            gridItemCount++;
         }
 
         GridItem() : GridItem(0,0,0,0) {
@@ -40,7 +41,7 @@ class GridItem {
             return height;
         }
 
-        static int getActiveGridItemCount() {
+        int getActiveGridItemCount() {
             return gridItemCount; 
         }
 
@@ -49,6 +50,7 @@ class GridItem {
         }
 
         virtual ~GridItem() {
+            gridItemCount--;
         }
 
 

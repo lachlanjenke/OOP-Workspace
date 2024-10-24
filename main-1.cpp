@@ -5,6 +5,8 @@
 
 using namespace std;
 
+int GridItem::gridItemCount = 0;
+
 int main() {
     int width = 5, height = 5;
     GridItem item1(0,0,width,height); 
