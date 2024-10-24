@@ -4,6 +4,8 @@
 #include "GridItem.hpp"
 #include "Robot.hpp"
 
+int Interactable::interactableCount = 0;
+
 enum InteractableType {
     GOAL,
     OBSTACLE
