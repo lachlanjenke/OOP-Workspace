@@ -7,7 +7,7 @@ void b(int *p) {
 
 }
 
-int a (int *p) {
+void a (int *p) {
     *p = *p + 1;
     int x = 100;
     b(&x);
